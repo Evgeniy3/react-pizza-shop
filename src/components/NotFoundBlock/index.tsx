@@ -1,4 +1,5 @@
 import styles from './NotFoundBlock.module.scss';
+import img from '../../assets/img/404.png'
 
 export const NotFoundBlock: React.FC = () => {
     return (

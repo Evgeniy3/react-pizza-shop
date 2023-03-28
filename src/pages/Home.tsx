@@ -35,7 +35,7 @@ const Home: React.FC = () => {
     const sortBy = sort.sortProperty.replace('-', '');
     const order = sort.sortProperty.includes('-') ? 'asc' : 'desc';
     const category = categoryId > 0 ? String(categoryId): '';
-    const search = searchValue ? `search=${searchValue}` : '';
+    const search = searchValue
 
     dispatch(
       fetchPizzas({

@@ -5,7 +5,9 @@
   text-align: center;
   margin-bottom: 65px;
   transition: all 0.2s ease-in-out;
-
+  @media (max-width: 330px) {
+    width: 270px;
+  }
   &:hover {
     transform: scale(1.03);
   }
@@ -73,5 +75,19 @@
     font-size: 22px;
     line-height: 27px;
     letter-spacing: 0.015em;
+  }
+}
+
+.fullpizza {
+  text-align: center;
+  &-img {
+    width: 400px;
+    @media (max-width: 450px) {
+      width: 270px;
+    }
+  }
+  &-title,
+  &-price {
+    margin-bottom: 10px;
   }
 }
